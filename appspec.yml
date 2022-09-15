@@ -4,7 +4,7 @@ files:
   - source: /
     destination: /var/www/html/
 permissions:
-  - object: /srv/www/app
+  - object: /var/www/html
     owner: test
     group: test
     mode: 750
