@@ -3,6 +3,11 @@ os: linux
 files:
   - source: /
     destination: /var/www/html/
+permissions:
+  - object: /var/www/html
+    owner: test
+    group: test
+    mode: 750
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies
